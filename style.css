@@ -1213,10 +1213,14 @@ img {
         margin-top:-38px;
     }
 
+    .a-logica-p3-esquerda{
+       height: 390px;
+    }
+
     .a-logica-p3-esquerda-1{
         height: 350px;
         text-align: left;
-        padding: 83px 0 104px 33px;
+        margin: 120px auto auto 50px;
     }
 
     .a-logica-p3-esquerda-1 h1{
