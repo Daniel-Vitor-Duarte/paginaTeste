@@ -1022,12 +1022,12 @@ img {
 }
 
 .estudos-1{
-    z-index: 100;
     position: absolute;
     width: 100%;
-    max-width: 1225px;
-    max-height: 674.383px;
-    margin: -64px;
+    max-width: 1025px;
+    max-height: 374px;
+    margin: 80px 40px auto;
+    object-fit: none;
 }
 
 #estudos-arrow-1{
@@ -1038,6 +1038,9 @@ img {
     align-items: center;
     flex-shrink: 0;
     margin: 266px 27px 326px -50px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
 }
 
 #estudos-arrow-2{
@@ -1048,6 +1051,9 @@ img {
     align-items: center;
     flex-shrink: 0;
     margin: 266px auto 326px 27px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
 }
 
 #estudos-box{
