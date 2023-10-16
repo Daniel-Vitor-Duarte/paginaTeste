@@ -9,6 +9,7 @@
 body{
     max-width: 1920px;
     max-height: 9291px;
+    overflow-x: hidden;
 }
 
 img {
@@ -18,6 +19,7 @@ img {
 
 .gradient-background{
     background: linear-gradient(0deg, rgba(244, 244, 244, 0.00) 1.64%, #E8E8E8 9.99%, #F3F3F3 53.09%, rgba(255, 255, 255, 0.00) 87.98%);
+    padding-bottom: 171px;
 }
 
 .container {
@@ -304,6 +306,7 @@ img {
     font-weight: 700;
     line-height: normal;
 }
+
 .embasamento h1{
     color: #000;
     font-size: 48px;
@@ -535,6 +538,7 @@ header{
     flex-shrink: 0;
     border-radius: 10px;
     gap: 10px;
+    margin-left: -8px;
 }
 
 .second-box-pic{
@@ -556,7 +560,7 @@ header{
 
 .a-logica-p3{
     display: flex;
-    margin: 171px auto auto auto;
+    margin: auto;
     gap: 10px;
 }
 
@@ -614,7 +618,8 @@ header{
 
 .o-sucesso-p3{
     display: flex;
-    width: 1185px;
+    width: 100%;
+    max-width: 1185px;
     height: 660px;
     flex-shrink: 0;
 }
@@ -651,28 +656,38 @@ header{
 }
 
 .o-sucesso-p3-2-1{
-    width: 75px;
-    height: 363px;
+    max-width: 75px;
+    max-height: 363px;
     object-fit: contain;
 }
 
 .o-sucesso-p3-2{
-    position: absolute;
-    margin: 72.5px 0 auto 1185px;
+    z-index: 100;
+    margin-top: -290px;
 }
 
 .titulo-o-sucesso-p3{
-    margin: 155px 1130px 105px 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 119px auto 105px 30px;
+    max-width: 422px;
+    
+}
+
+.teste{
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 .planner-bar{
-    width: 1198px;
+    max-width: 1198px;
     height: 60px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #F5F5F5;
     display: flex;
-    
     justify-content: center;
     margin-top: 173px;
 }
@@ -751,11 +766,14 @@ header{
 
 .gif-p3{
     display: flex;
+    position: relative;
 }
 
 .gif-p3-1{
-    width: 1200px;
-    height: 670px;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 670px;
     border: 15px solid;
     border-radius: 10px;
     border-color: #F5F5F5;
@@ -767,23 +785,25 @@ header{
 
 
 .gif-p3-2{
-    width: 309px;
-    height: 657px;
+    width: 100%;
+    height: 100%;
+    max-width: 309px;
+    max-height: 657px;
     border-radius: 10px;
     position: absolute;
     object-fit: cover;
     object-position: 0 70%;
-    margin: 200px 0 0 959px;
-    box-shadow: 19px 22px 39px 0px rgba(0, 0, 0, 0.10); /*check that right*/
+    margin: 15% 0 0 76%;
+    box-shadow: 19px 22px 39px 0px rgba(0, 0, 0, 0.10); 
 }
 
 .assinar-bar{
     display: flex;
-    width: 1222px;
+    max-width: 1222px;
     height: 101px;
     padding: 22px 19px;
     align-items: center;
-    gap: 32px;
+    gap: 2%;
     border-radius: 8px;
     background: #000;
     margin-top: 347px;
@@ -830,10 +850,10 @@ header{
 }
 
 .plataformas{
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 412px;
-    margin: 23px 381px 23px;
+    display: flex;
+    justify-content: center;
+    gap: 22%;
+    margin: 23px auto;
 }
 .plataformas div{
     display: flex;
@@ -861,8 +881,8 @@ header{
 
 .bonus-circulo{
     display: flex;
-    max-width: 250px;
-    max-height: 250px;
+    width: 250px;
+    height: 250px;
     transform: rotate(190.623deg);
     align-items: center;
 }
@@ -877,7 +897,8 @@ header{
 
 .aula-mestra{
     position: absolute;
-    margin: 152px auto auto 490px;
+    margin-top: 152px;
+    margin-left: 24.5%;
     display: flex;
 }
 
@@ -1020,10 +1041,26 @@ header{
     transform: translateX(10px);
 }
 
+.embasamento{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
 .embasamento h1{
     width: 100%;
     max-width: 652px;
-    margin: 160px 849px 20px auto;
+    margin-top: 160px;
+}
+
+.embasamento-line{
+    background-color: #D9D9D9;
+    height: 1px;
+    width: 80%;
+    margin-top: 20px;
 }
 
 .embasamento h2{
@@ -1035,67 +1072,53 @@ header{
 }
 
 .estudos{
-    align-content: center;
     display: flex;
-    margin-left: 370px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .estudos-1{
-    position: absolute;
     width: 100%;
-    max-width: 1025px;
-    max-height: 374px;
-    margin: 80px 40px auto;
+    max-width: 1085px;
+    max-height: 444px;
+    margin-top: 53px;
     object-fit: none;
+    background-color: #cbc3bb2f;
+    border-radius: 10px;
 }
 
 #estudos-arrow-1{
-    display: flex;
     width: 22px;
     height: 22px;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
-    margin: 266px 27px 326px -50px;
     cursor: pointer;
     border: none;
     background-color: white;
 }
 
 #estudos-arrow-2{
-    display: flex;
     width: 22px;
     height: 22px;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
-    margin: 266px auto 326px 27px;
     cursor: pointer;
     border: none;
     background-color: white;
 }
 
-#estudos-box{
-    width: 1082px;
-    height: 442px;
-    background-color: #cbc3bb2f;
-    position: relative;
-    border-radius: 10px;
-    margin: 50px 5px;
-}
-
 .copyright{ 
+    display: flex;
     width: 100%;
     max-width: 762px;
     height: 31px;
     flex-shrink: 0;
-    margin-left: 28%;
-    margin-bottom: 100px;
+   margin: 160px auto 50px;
 }
 
 @media (max-width: 1024px)
 {  
-
+   
     body{
         background: #EBEBEB;
         overflow-x: hidden;
@@ -1301,7 +1324,7 @@ header{
     }
 
     .titulo-o-sucesso-p3{
-        margin: 96px auto auto 46px;
+        margin: 76px auto auto;
         width: 320px;
     }
 
@@ -1314,7 +1337,10 @@ header{
     }
 
     .o-sucesso-p3{
-        width: auto;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        height: auto;
     }
 
     .o-sucesso-p3 ul{
@@ -1334,7 +1360,17 @@ header{
 
     .planner-bar{
         width: 370px;
-        margin: -305px -25px -10px;
+        margin: 0;
+        align-self: center;
+    }
+
+    .teste{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        margin-top: 95px;
     }
 
     .planner-bar p{
@@ -1365,6 +1401,10 @@ header{
         width: 18px;
     }
 
+    .gif-p3{
+        justify-content: center;
+    }
+
     .gif-p3-phone{
         width: 370px;
         height: 493px;
@@ -1372,7 +1412,7 @@ header{
         border-radius: 10px;
         background: #F5F5F5;
         box-shadow: 19px 22px 39px 0px rgba(0, 0, 0, 0.10);
-        margin: 24px 11px auto -25px;
+        margin: 16px auto;
         padding: 0;
     } 
     
@@ -1388,7 +1428,7 @@ header{
         width: 200px;
         height: 395px;
         flex-shrink: 0;
-        border-radius: 7.088px;
+        border-radius: 95px 7px 7px;
         position: absolute;
         object-fit: cover;
         object-position: 81.5%;
@@ -1409,13 +1449,14 @@ header{
     .assinar-bar{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 22px;
+        justify-content: space-between;
+        width: 367px;
+        height: 252px;
     }
 
     .assinar-bar button{
         width: 340px;
+        min-height: 57px;
         margin: auto 5px auto;
     }
     
@@ -1439,8 +1480,8 @@ header{
         height: 325px;
         transform: rotate(90deg);
         padding: 0;
-        margin: -140px auto;
         object-fit: cover;
+        margin: -140px auto;
     }
 
     .assinar-bar-phone-2{
@@ -1469,7 +1510,7 @@ header{
     }
 
     .bonus-circulo{
-        width: 100%;
+        width: 60%;
         transform: rotate(180deg);
         position: absolute;
         margin-top: -100px;
@@ -1481,18 +1522,22 @@ header{
 
     .aula-mestra-text{
         width: 100%;
-        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 330px auto;
     }
+
 
     .aula-mestra-text h1{
         font-size: 33px;    
         width: 100%;
+        margin: auto;
     }
 
     .aula-mestra ul{
         margin-top: 144px;
-        margin-bottom: auto;
-        width: 100%;
         height: 439px;
         padding: 10px;
     }
